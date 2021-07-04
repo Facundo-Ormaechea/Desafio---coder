@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  background: rgb(177, 119, 218);
+  padding: 0 20px;
+  line-height: 0;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  /* 
+    Opción 1
+    
+    line-height de los li igual a la altura del header
+
+    line-height: 50px;
+  */
+
+  /*
+    Opción 2
+
+    line-height normal a los li. Pero le agrego padding top y bottom
+  */
+  line-height: 1;
+  padding: 17px 0;
+}
+
+nav li a {
+  color: #fff;
+}
+
+/* nav li a:hover {
+  color: green;
+} */
+
+.submenu {
+  display: none;
+  background: rgb(141, 84, 182);
+  position: absolute;
+  left: 0;
+  top: 47px;
+  width: 140px;
+}
+
+nav li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  margin-left: 0;
+  padding: 10px;
+}
+
+.submenu li:hover {
+  background: rgb(112, 62, 148);
+}

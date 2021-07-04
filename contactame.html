@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactame</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--Encabezado de mi sitio -->
+
+	<header>
+			<ul class="listasinviñetas">
+				<li><a href="index.html"><h1>Facundo Ormaechea</h1></a></li>
+				<li><a href="mitrabajo.html">Mi trabajo</a></li>
+				<li><a href="acercademi.html">Acerca de mi</a></li>
+				<li><a href="contactame.html">Contactame</a></li>
+				<li><a href="misredes.html">Mis redes</a></li>
+			</ul>
+					
+	</header>
+<!-- Fin de encabezado>-->
+
+	<hr>
+
+<!-- Contenido principal >-->
+
+	<!--Comienza Formulario-->
+	<br>
+	<fieldset>
+		<legend ><h2 class="trabajemosjuntos">Trabajemos juntos</h2></legend>
+
+		<form action="envia.php" method="POST" enctype="multipart/form-data">
+			<label for="nombreyapellido">Nombre y Apellido</label>
+			<input type="text" name="nombreyapellido" maxlength="100">
+
+			<br>
+
+				<label for="email">Correo electrónico</label>
+				<input type="email" name="email" maxlength="100">
+
+			<br>
+				<textarea name="Contametuproyecto" id="" cols="30" rows="10">Contame sobre tu proyecto y me comunicare con vos</textarea>
+
+			<br>
+
+				<h4>¿Que te gusta comer mas con el mate?:</h4>
+				
+				<select name="pa-picar">
+				<option value="Chipa">Chipá</option>
+				<option value="Bizcochitos">Bizcochitos</option>
+				<option value="Matesolocarajo">Mate solo carajo</option>
+				</select>
+				
+				<br>
+
+				<div><h5>¿Esta checkeado esto?</h5></div>
+			
+				<input type="checkbox" name="checkeado" value="checkeado">
+
+				<br>
+				
+				<input type="submit" name="submit" value="enviar">
+				<br>
+				<input type="reset" name="reset" value="limpiar">
+		</form>
+	</fieldset>	
+<!--Termina Formulario-->
+
+	<!--Termina Formulario-->
+	
+</body>
+</html>
